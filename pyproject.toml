@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab_1"
+version = "0.1.0"
+description = "Second lab"
+requires-python = ">=3.9"
+dependencies = [
+    "flask==3.0.0",
+    "gunicorn<=20.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+        "pytest==7.4.0",
+        "safety",
+        "flake8",
+        "bandit"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

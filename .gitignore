@@ -1,0 +1,15 @@
+# Python internals
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment & IDE
+.venv/
+venv/
+.env
+.vscode/
+
+# Testing
+.pytest_cache/
