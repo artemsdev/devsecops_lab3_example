@@ -5,6 +5,10 @@ __pycache__/
 dist/
 build/
 
+# pre-commit cache
+.cache/
+.pre-commit/
+
 # Environment & IDE
 .venv/
 venv/
