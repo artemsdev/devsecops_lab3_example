@@ -1,6 +1,18 @@
-<h1>Welcome! This is a simple example of CI/CD project.</h1>
-<a href="/health">Check health</a>
-<h6>Lab 3 Pull request practice</h6>
-<footer style="margin-top: 20px; font-size: 0.8em; color: gray;">
-    <p>Версія: {{ app_version }} | Коміт: <code>{{ commit_sha }}</code></p>
-</footer>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Flask app!</title>
+  </head>
+  <body>
+    <h1>Welcome! This is a simple example of CI/CD project.</h1>
+    <h6>Lab 3 Pull request practice</h6>
+    <a class="btn btn-primary" href="/health">Check health</a>
+    <footer style="margin-top: 20px; font-size: 2em; color: gray">
+      <p>Версія: {{ app_version }} | Коміт: <code>{{ commit_sha }}</code></p>
+      <p>Hello world!</p>
+    </footer>
+  </body>
+</html>
